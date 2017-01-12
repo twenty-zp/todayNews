@@ -1,0 +1,53 @@
+.body {
+  margin: 40rpx;
+  border-bottom: 1rpx solid #F2F3F4;
+  font-size: 45rpx;
+  font-family: sans-serif;
+  color: #0C0302;
+}
+.title {
+  line-height: 55rpx;
+}
+.thumbImage {
+  display: flex;
+  flex-shrink:  1;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.thumbImage image {
+  width: 150px;
+  height: 100px;
+  margin: 5rpx;
+}
+.original {
+  font-size: 28rpx;
+  color: #B2BABB;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*一张图片布局css*/
+.onebody {
+  display: flex;
+  margin: 40rpx;
+  border-bottom: 1rpx solid #F2F3F4;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.onetitle {
+  flex: 1;
+}
+.oneOriginal {
+  font-size: 26rpx;
+  color: #B2BABB;
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.oneOriginal text
+{
+  padding-right: 10rpx;
+}

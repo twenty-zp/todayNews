@@ -1,0 +1,7 @@
+/* pages/content/content.wxss */
+image {
+    width: 100%;
+}
+text {
+    color: black;
+}

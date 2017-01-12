@@ -1,0 +1,17 @@
+<view class="container">
+    <view class="header">
+        <text>{{content.title}}</text>
+    </view>
+    <view class="content">
+        <block wx:for="{{content.textArrs}}">
+            <view wx:if="{{item.isImage}}" class="image" mode="widthFix">
+                <image src="{{item.str}}"/> 
+            </view>
+            <view wx:else>
+                <text>{{item.str}}</text>
+            </view>
+        </block>
+    </view>
+    <view class="bottom">
+    </view>
+</view>

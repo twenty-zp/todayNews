@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/content/content",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#E74C3C",
+    "navigationBarTitleText": "今日头条",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": true
+  }
+}

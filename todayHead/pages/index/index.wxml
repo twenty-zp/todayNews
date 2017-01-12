@@ -1,0 +1,15 @@
+<!--一个图片的布局-->
+<import src="../../utils/onelayout.wxml"/>
+<!--三个图片的布局-->
+<import src="../../utils/threelayout.wxml"/>
+<!--index.wxml-->
+<view class="container">
+        <block wx:for="{{dataArr}}">
+        <navigator url="../content/content?contenturl={{item.httpurl}}" hover-class="none">
+             <template is="{{item.countArrs.length >= 2 ? 'threelayout' : 'onelayout'}}" data="{{...item}}"/>
+        </navigator>
+        <!--{{item.countArrs >=2 ? 'threelayout' : 'onelayout'}}-->
+        </block>
+ </view>
+
+

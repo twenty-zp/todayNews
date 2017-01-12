@@ -1,0 +1,19 @@
+<template name="onelayout">
+    <view class="onebody">
+        <view class="content">
+            <view class="onetitle">
+                <text>{{title}}</text>
+            </view>
+            <!--来源-->
+            <view class="oneOriginal">
+                <text >{{author_name}}</text>
+                <text class="time">{{date}}</text>
+            </view>
+        </view>
+        <view class="thumbImage">
+            <block wx:for="{{countArrs}}" wx:for-item="imageName" wx:key="*this">
+                <image src="{{imageName}}"></image>
+            </block>
+        </view>
+    </view>
+</template>

@@ -1,0 +1,17 @@
+<template name="threelayout">
+    <view class="body">
+        <view class="title">
+            <text>{{title}}</text>
+        </view>
+        <view class="thumbImage">
+            <block wx:for="{{countArrs}}" wx:for-item="imageName" wx:key="*this">
+                <image src="{{imageName}}"></image>
+            </block>
+        </view>
+        <!--来源-->
+        <view class="original">
+            <text >{{author_name}}</text>
+            <text class="time">{{date}}</text>
+        </view>
+    </view>
+</template> 
