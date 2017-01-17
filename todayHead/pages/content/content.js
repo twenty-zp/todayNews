@@ -53,6 +53,7 @@ Page({
         var body = common.getTagContent(c,"body","")[1];
         //来源内容
         var src = common.getTagContent(body,"span"," class=\"src\"")[1]
+        src = common.replaceTagContent(src,"&nbsp;&nbsp;&nbsp;&nbsp;","   ")
         // 获取body中的article得到div标签>然后获取 p标签
         var article = common.getTagContent(body,"article"," id=\"J_article\" class=\"J-article article\"")[1];
         var p = common.getTagContent(article,"div"," id=\"content\" class=\"J-article-content article-content\"")[1];
@@ -77,7 +78,7 @@ Page({
             textAndIndexObj.str = str;
             realArrs.push(textAndIndexObj);
         };
-        console.log(realArrs);
+        console.log(src);
 
         that.setData({
           content:  {

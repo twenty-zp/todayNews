@@ -2,10 +2,13 @@
     <view class="header">
         <text>{{content.title}}</text>
     </view>
+    <view class="origin">
+        <text>{{content.src}}</text>
+    </view>
     <view class="content">
         <block wx:for="{{content.textArrs}}">
             <view wx:if="{{item.isImage}}" class="image" mode="widthFix">
-                <image src="{{item.str}}"/> 
+                <image src="{{item.str}}" mode="aspectFit"/> 
             </view>
             <view wx:else>
                 <text>{{item.str}}</text>
