@@ -17,4 +17,5 @@ image {
 .content text {
     color: black;
     text-indent: 2em;
+    line-height: 60rpx;
 }

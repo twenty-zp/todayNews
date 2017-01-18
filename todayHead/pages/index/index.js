@@ -56,13 +56,13 @@ Page({
           // success
           const dataArrs = res.data.result.data
           for(var i = 0; i < dataArrs.length; i++) {
+               console.log(i);
                var obj = dataArrs[i];
                obj.countArrs = that.imageCount(obj);
                obj.httpurl = that.geturlPath(obj.url);
                if (that.array_contain(obj)) {continue};
               that.globalData.tempArrs.push(obj);
           }
-          console.log(that.globalData.tempArrs)
           that.setData({
              dataArr: that.globalData.tempArrs
           })
