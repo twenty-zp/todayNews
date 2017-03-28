@@ -48,7 +48,7 @@ Page({
         url: 'https://v.juhe.cn/toutiao/index',
         data: {
           'type': "guonei",
-          'key':"b507a3b73efeed900881032d1ed14e51"
+          'key':"使用你自己的key"
         },
         method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
         // header: {}, // 设置请求的 header
@@ -70,9 +70,11 @@ Page({
         },
         fail: function() {
           // fail
+          console.log('使用你自己的key');
         },
         complete: function() {
           // complete
+          
         }
     })
   },
